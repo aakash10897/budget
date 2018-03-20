@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Budget Tracker</string>
+
+    <string name="title_activity_xxx">xxx</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_show_list">show_list</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtsize">20dp</dimen>
+    <dimen name="btnh">50dp</dimen>
+    <dimen name="btnw">120dp</dimen>
+
+    <dimen name="imgw">210dp</dimen>
+    <dimen name="imgh">130dp</dimen>
+    <dimen name="eml">20dp</dimen>
+    <dimen name="emr">20dp</dimen>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.manukanu.expenditure.moneyused"
+    tools:showIn="@layout/activity_moneyused"
+    android:background="#FFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="280dp"
+            android:text="Total Budget"
+            android:id="@+id/total"
+            android:textSize="18dp"
+            android:textColor="#000"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            android:onClick="total"
+            />
+        <TextView
+            android:id="@+id/balance_text"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:text="Remaining Balance"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="200dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:onClick="balance"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/add"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+
+        android:textSize="@dimen/txtsize"
+        android:textColor="#f5f2f2"
+        android:layout_gravity="center"
+        android:onClick="add"
+        android:background="@drawable/add"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/show"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="120dp"
+
+
+        android:textSize="@dimen/txtsize"
+        android:textColor="#f5f2f2"
+        android:layout_gravity="center"
+        android:onClick="show"
+        android:background="@drawable/show"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/alarm"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="0dp"
+
+
+        android:textSize="@dimen/txtsize"
+        android:textColor="#f5f2f2"
+        android:layout_gravity="center"
+        android:onClick="alarm"
+        android:background="@drawable/alarm"
+        android:layout_below="@+id/show"
+        android:layout_alignStart="@+id/show" />
+
+</RelativeLayout>

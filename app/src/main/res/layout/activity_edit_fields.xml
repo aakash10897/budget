@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manukanu.expenditure.edit_fields"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Remaining Balance"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="80dp"
+        android:onClick="balance"
+        android:textSize="27dp"
+        android:textColor="#144d70"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category "
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="#267e9e"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#000"
+        android:focusable="true"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/category_edit"
+        android:layout_marginLeft="@dimen/eml"
+        android:layout_marginRight="@dimen/emr"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense "
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textColor="#267e9e"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/expense_edit"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/eml"
+        android:textColor="#000"
+        android:layout_marginRight="@dimen/emr"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date "
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="setDate"
+        android:layout_gravity="center"
+        android:textColor="#267e9e"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/dedit"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="#4666d1"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="setDate"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="90dp"
+            android:layout_height="@dimen/btnh"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="142dp"
+            android:gravity="center"
+            android:background="@drawable/mbutton"
+            android:onClick="update"
+            android:text="update"
+            android:textColor="#FFF"
+            android:textSize="@dimen/txtsize"
+            android:elevation="20dp">
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

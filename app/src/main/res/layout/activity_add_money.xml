@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manukanu.expenditure.add_money"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Remaining Balance"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:onClick="balance"
+        android:textColor="#144d70"
+        android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category "
+            android:textColor="#267e9e"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eml"
+        android:textAlignment="center"
+        android:layout_marginRight="@dimen/emr"
+        android:inputType="text"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Expense "
+        android:textColor="#267e9e"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/price"
+            android:layout_marginLeft="@dimen/eml"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginRight="@dimen/emr"/>
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date "
+            android:textColor="#267e9e"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="setDate">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/selectdate"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:layout_below="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="#267e9e"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="8dp" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="90dp">
+
+
+
+
+
+    <Button
+        android:id="@+id/details_add"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/btnh"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/mbutton"
+        android:onClick="addnew"
+        android:text="Add"
+        android:textSize="@dimen/txtsize"
+        android:elevation="20dp"
+        android:textColor="#fff">
+
+    </Button>
+</LinearLayout>
+
+</LinearLayout>

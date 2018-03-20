@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.manukanu.expenditure.edit_budget">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:text="Enter new Budget"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/editbudget"
+        android:gravity="center"
+        android:textSize="@dimen/txtsize"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:inputType="number"
+        android:background="@drawable/text_border"/>
+
+    <Button
+        android:layout_width="@dimen/btnw"
+        android:layout_height="@dimen/btnh"
+        android:text="Update"
+        android:id="@+id/ok"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/txtsize"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:onClick="updatebudget"
+        android:background="@drawable/mbutton"
+        android:elevation="150dp" />
+
+
+</LinearLayout>

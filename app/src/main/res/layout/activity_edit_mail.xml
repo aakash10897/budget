@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manukanu.expenditure.edit_mail"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:text="Old Recovery Mail"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/old_rec_mail"
+        android:background="@drawable/text_border"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="New Recovery Mail"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/new_rec_mail"
+        android:background="@drawable/text_border"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Update"
+        android:textColor="#FFF"
+        android:id="@+id/update_mail"
+        android:onClick="update_recmail"
+        android:background="@drawable/mbutton"
+        android:elevation="150dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.manukanu.expenditure.moneyused">
+
+    <item
+        android:id="@+id/action_budget"
+        android:orderInCategory="100"
+        android:title="Edit budget"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_password"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never" />
+
+
+
+    <item
+        android:id="@+id/action_username"
+        android:orderInCategory="100"
+        android:title="Change Username"
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_backup"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="BackUp"-->
+        <!--app:showAsAction="never" />-->
+    <item
+        android:id="@+id/action_mail"
+        android:orderInCategory="100"
+        android:title="Change recovery mail"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
